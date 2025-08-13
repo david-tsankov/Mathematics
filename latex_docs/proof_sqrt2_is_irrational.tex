@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Proof of the irrationality of $\sqrt{2}$}
+\author{David}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Proof using contradiction}
+Let us assume $\sqrt{2}$ is a rational number, where a rational number is defined as follows:\\
+\begin{equation}
+    \text{A number r is rational if} \ r=\frac{p}{q} \ \ \text{where} \ \ p,q \in \mathbb{Z} \ \text{and} \ q \neq 0 
+\end{equation}
+
+Now, assuming $\sqrt{2}$ is rational, we can write the following: $\sqrt{2}=\frac{p}{q}$\\
+squaring both sides leads to: $2=\frac{p^2}{q^2} \ \therefore \ p^2=2q^2$\\
+
+This is very important, as only an even number squared can give another even number, this leads to the following about $p$:\\
+\begin{equation}
+    \text{p even, so let} \ p=2r \ \therefore \ (2r)^2 =2q^2 \ \therefore \ 2r^2=q^2
+\end{equation}
+we now reach the same conclusion for $q$ as for $p$, if $q^2$ is even, $q$ is even as well,\\
+but if both $p$ and $q$ are even, both have a factor of 2, so $\frac{p}{q}$ cannot be in lowest terms, 
+this leads to the contradiction proving $\sqrt{2}$ is an irrational number.
+\end{document}
