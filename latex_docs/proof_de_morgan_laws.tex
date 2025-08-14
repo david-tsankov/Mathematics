@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Qustion on proof of de Morgans laws}
+\author{David}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Inclusion both ways}
+Prove:
+\begin{equation}
+    (A \cup B)^c=A^c \cap B^c
+\end{equation}
+Inclusion going from $(A \cup B)^c$ to $A^c \cap B^c$:\\
+\begin{equation}
+    (A \cup B)^c=\{x \in \mathbb{R} : x \notin A \cup B\} \therefore x \notin A \ \text{and} \ x \notin B
+\end{equation}
+\begin{equation}
+    \implies x \in A^c \ \text{and} \ x \in B^c \therefore x \in A^c \cap B^c
+\end{equation}
+\\\\
+Inclusing going from $A^c \cap B^c$ to $(A \cup B)^c$:\\
+\begin{equation}
+    A^c \cap B^c = \{x \in \mathbb{R} : x \in A^c \ \text{and} \ x \in B^c\} \therefore x \notin A \ \text{and} \ x \notin B 
+\end{equation}
+\begin{equation}
+    \implies x \notin A \cup B \therefore x \in (A \cup B)^c
+\end{equation}
+
+\end{document}
